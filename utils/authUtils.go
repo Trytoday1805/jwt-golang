@@ -7,7 +7,7 @@ import (
     "webdev-intern-assignment/models"
 )
 
-var jwtKey = []byte("your_secret_key")
+var jwtKey = []byte("taikey")
 
 func GenerateToken(user models.User) (string, error) {
     expirationTime := time.Now().Add(24 * time.Hour)
